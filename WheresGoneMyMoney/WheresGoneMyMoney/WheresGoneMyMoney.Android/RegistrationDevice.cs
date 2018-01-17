@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using Android.Util;
 using WheresGoneMyMoney.Interfaces;
 
+
 [assembly: Dependency(typeof(WheresGoneMyMoney.Droid.RegistrationDevice))]
 namespace WheresGoneMyMoney.Droid
 {

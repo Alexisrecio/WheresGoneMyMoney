@@ -1,8 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+using WheresGoneMyMoney.Classes;
+using WheresGoneMyMoney.Models;
+using WheresGoneMyMoney.Pages;
+using WheresGoneMyMoney.Services;
+using WheresGoneMyMoney.ViewModels;
 using Xamarin.Forms;
 
 namespace WheresGoneMyMoney
@@ -40,8 +41,8 @@ namespace WheresGoneMyMoney
 
             if (user != null && user.IsRemembered && user.TokenExpires > DateTime.Now)
             {
-                var favoriteTeam = _dataService.Find<Team>(user.FavoriteTeamId, false);
-                user.FavoriteTeam = favoriteTeam;
+               // var favoriteTeam = _dataService.Find<Team>(user.FavoriteTeamId, false);
+               // user.FavoriteTeam = favoriteTeam;
                 var mainViewModel = MainViewModel.GetInstance();
                 mainViewModel.CurrentUser = user;
                 mainViewModel.RegisterDevice();//todo
@@ -110,7 +111,7 @@ namespace WheresGoneMyMoney
             user.TokenExpires = token.Expires;
             user.IsRemembered = true;
             user.Password = profile.Id;
-            dataService.DeleteAllAndInsert(user.FavoriteTeam);
+          //  dataService.DeleteAllAndInsert(user.FavoriteTeam);
             dataService.DeleteAllAndInsert(user.UserType);
             dataService.DeleteAllAndInsert(user);
             //dataService.DeleteAllAndInsert(user);

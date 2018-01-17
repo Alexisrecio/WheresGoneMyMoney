@@ -1,6 +1,6 @@
 ﻿using SQLite.Net.Interop;
 
-namespace WheresGoneMyMoney.Infrastructure
+namespace WheresGoneMyMoney.Interfaces
 {
     public interface IConfig
     {

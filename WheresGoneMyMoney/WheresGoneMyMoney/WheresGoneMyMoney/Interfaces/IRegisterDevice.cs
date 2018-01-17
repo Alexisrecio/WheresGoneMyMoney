@@ -1,4 +1,4 @@
-﻿namespace WheresGoneMyMoney.Infrastructure
+﻿namespace WheresGoneMyMoney.Interfaces
 {
     public interface IRegisterDevice
     {

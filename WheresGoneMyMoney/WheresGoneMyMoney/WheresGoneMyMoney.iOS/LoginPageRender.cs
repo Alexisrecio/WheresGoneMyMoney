@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using WheresGoneMyMoney.Classes;
+using WheresGoneMyMoney.Pages;
+using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-
 [assembly: ExportRenderer(typeof(LoginPage), typeof(WheresGoneMyMoney.iOS.LoginPageRenderer))]
 namespace WheresGoneMyMoney.iOS
 {

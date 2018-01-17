@@ -1,0 +1,2 @@
+W:\_GITHUB\WheresGoneMyMoney\WheresGoneMyMoney\WheresGoneMyMoney\WheresGoneMyMoney.UWP\WheresGoneMyMoney.UWP.csproj;x86
+W:\_GITHUB\WheresGoneMyMoney\WheresGoneMyMoney\WheresGoneMyMoney\WheresGoneMyMoney\WheresGoneMyMoney.csproj;neutral
